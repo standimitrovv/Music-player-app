@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+body {
+  font-weight: 500;
+  line-height: 1.6;
+  font-family: sans-serif;
+  background-color: #d0ffd6;
+}
+
+.app-container {
+  width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 6rem;
+  height: 64rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0.5rem;
+  border-radius: 5rem;
+  background-color: white;
+}
+
+.heading-1 {
+  color: black;
+  font-size: 2.5rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  font-weight: 700;
+}
+
+.img-box {
+  width: 70%;
+  height: 27rem;
+  margin-bottom: 2rem;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  border-radius: 3rem;
+  object-fit: cover;
+  box-shadow: 0rem 0.3rem 2rem black;
+}
+
+.app-functions {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+.app-functions__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app-functions__text-performer {
+  font-size: 2rem;
+  font-weight: 500;
+  color: red;
+}
+
+.app-functions__text-song {
+  font-size: 2.4rem;
+  color: #2a1e5c;
+  font-weight: 600;
+}
+
+.app-functions__duration {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.2rem;
+}
+
+.app-functions__duration--current,
+.app-functions__duration--total {
+  height: 20%;
+  flex: 0 0 10%;
+  transition: width 0.1s linear;
+}
+.app-functions__duration--progress {
+  width: 20%;
+  height: 3px;
+  margin: 4rem 1rem;
+  border-radius: 5rem;
+  flex: 0 0 90%;
+  background: gray;
+  appearance: none;
+}
+
+.app-functions__duration--progress::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: blue;
+  appearance: none;
+  cursor: pointer;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+}
+
+.app-functions__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  border: 0;
+  background-color: white;
+}
+
+.fas {
+  height: 3rem;
+  cursor: pointer;
+  font-size: 3rem;
+}
+
+.fa-play,
+.fa-pause {
+  font-size: 4rem;
+  height: 4rem;
+}

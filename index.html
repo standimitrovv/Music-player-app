@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      referrerpolicy="no-referrer"
+    />
+    <script defer src="script.js"></script>
+    <title>Music Player</title>
+  </head>
+  <body class="body">
+    <main class="app-container">
+      <h1 class="heading-1">Now Playing</h1>
+
+      <div class="img-box">
+        <img src="gold.jpg" alt="Cover of the songs" class="img" />
+      </div>
+      <div class="app-functions">
+        <div class="app-functions__text">
+          <p class="app-functions__text-performer">Chet Faker</p>
+          <p class="app-functions__text-song">Gold</p>
+        </div>
+        <audio src="gold.mp3" id="audio"></audio>
+        <div class="app-functions__duration">
+          <div class="app-functions__duration--current">0:00</div>
+          <input type="range" min="0" max="100" value="0" class="app-functions__duration--progress"
+          > 
+          </input>
+          <div class="app-functions__duration--total">4:33</div>
+        </div>
+        <div class="app-functions__buttons">
+          <button class="btn btn-previous">
+            <i class="fas fa-step-backward"></i>
+          </button>
+          <button class="btn btn-play">
+            <i class="fas fa-play"></i>
+          </button>
+          <button class="btn btn-next">
+            <i class="fas fa-step-forward"></i>
+          </button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
